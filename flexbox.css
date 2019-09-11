@@ -1,0 +1,94 @@
+*{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 0;
+    
+}
+.wrapper{
+        
+    width: 100%;
+    margin: 0 auto;
+    max-width: auto;
+    
+    
+}
+  /* menu base styles */
+  
+  nav{
+    background: #333;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+  }
+  
+  nav a:hover{
+    background-color: #555;
+  }
+  
+  /* social menu base styles */
+  
+  /* flex styles */
+  
+  @media screen and (min-width: 768px){
+  
+  nav ul{
+    display: flex;
+  }
+  
+  nav li{
+    flex: 1 1 0;
+  }
+      
+  } /* end media 768 */
+  
+  
+
+
+
+.flex-container{
+     display: flex;
+   background: #fdc;
+    flex-wrap: wrap;
+    /*wrap reverse ise en üsttekini genişetir.*/
+}
+
+.box{
+    height: 100px;
+    min-width: 320px;
+    flex-grow: 1;
+    
+        
+    /*
+    
+    class özelliğine göre tanımlama yapılırken sadece bir kelime ile ortak özelliklere sahip elemanların ortak değerleri ayarlanabilir.
+    burda box ortak one,two,three farklı olduğu için box ların ortak özelliklerini tanımladık.
+    */
+}
+.one{
+    background-color: mediumaquamarine;
+   /*flex-grow: 2;*/
+    flex-shrink: 3;
+}
+
+.two{
+    background-color: maroon;
+    flex-basis: 251px;
+    
+    
+}
+
+.three{
+    background-color: coral;
+    flex-shrink: 5;
+    
+}
